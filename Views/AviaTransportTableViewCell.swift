@@ -14,8 +14,6 @@ class AviaTransportTableViewCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var modelsAmountLabel: UILabel!
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

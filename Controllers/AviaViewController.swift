@@ -26,18 +26,19 @@ class AviaViewController: UIViewController {
     //MARK: - Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "showModels" else {return}
-        guard let destVC = segue.destination as? ModelsTableViewCell else {return}
+        guard let destVC = segue.destination as? ModelsViewController else {return}
         guard let tableCell = sender as? UITableViewCell else {return}
-        guard let indexPath = tableView.indexPath(for: tableCell) else {return}
-        let model = vehicles[indexPath.row]
-        destVC.model = model
+        guard let indexPath = tableView.indexPath(for: tableCell)
+            else {return}
+        let oneVehicle = vehicles[indexPath.row]
+        destVC.vehicle = oneVehicle
     }
 }
-//MARK: - UITableViewDelegate, UITableViewDataSource
+    //MARK: - UITableViewDelegate, UITableViewDataSource
 extension AviaViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return vehicles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,15 +46,12 @@ extension AviaViewController: UITableViewDelegate, UITableViewDataSource {
             fatalError("Wrong cell type")
         }
         let vehicle = vehicles[indexPath.row]
-        cell.update(name: vehicle.name, image: vehicle.image, amount: vehicle.amountModels)
+        cell.update(name: vehicle.name, image: vehicle.image, amount: vehicle.models.count)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return view.bounds.height * 0.3
     }
-    
-
-    
 
 }

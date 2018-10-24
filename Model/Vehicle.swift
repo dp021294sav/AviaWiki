@@ -11,6 +11,5 @@ import UIKit
 struct Vehicle {
     var name: String
     var image: UIImage
-    var amountModels: Int
-    var  models: [String]
+    var models: [Model]
 }

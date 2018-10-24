@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67164F7F217E236C00B3F291 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67164F7E217E236C00B3F291 /* DescriptionViewController.swift */; };
 		67335573214248C500399598 /* ModelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67335572214248C500399598 /* ModelsTableViewCell.swift */; };
 		674207D9213FD37C006A4E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674207D8213FD37C006A4E3D /* AppDelegate.swift */; };
 		674207DE213FD37C006A4E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674207DC213FD37C006A4E3D /* Main.storyboard */; };
@@ -17,9 +18,11 @@
 		674DD169214121880066CC5D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674DD168214121880066CC5D /* Vehicle.swift */; };
 		674DD16B214134DE0066CC5D /* VehicleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674DD16A214134DE0066CC5D /* VehicleGenerator.swift */; };
 		674DD16D214143960066CC5D /* ModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674DD16C214143960066CC5D /* ModelsViewController.swift */; };
+		67FEFFD5216666BD00425435 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEFFD4216666BD00425435 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67164F7E217E236C00B3F291 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		67335572214248C500399598 /* ModelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewCell.swift; sourceTree = "<group>"; };
 		674207D5213FD37C006A4E3D /* AviaWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		674207D8213FD37C006A4E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		674DD168214121880066CC5D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		674DD16A214134DE0066CC5D /* VehicleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGenerator.swift; sourceTree = "<group>"; };
 		674DD16C214143960066CC5D /* ModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewController.swift; sourceTree = "<group>"; };
+		67FEFFD4216666BD00425435 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,11 @@
 		674207CC213FD37C006A4E3D = {
 			isa = PBXGroup;
 			children = (
-				674207D7213FD37C006A4E3D /* AviaWiki */,
+				67E33ADC218095C500DAEAF4 /* Model */,
+				67E33ADD218095D400DAEAF4 /* Views */,
+				67E33ADE218095DE00DAEAF4 /* Controllers */,
+				67E33AE1218097FB00DAEAF4 /* AviaWiki */,
+				67E33AE02180978900DAEAF4 /* Supporting files */,
 				674207D6213FD37C006A4E3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,19 +69,49 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		674207D7213FD37C006A4E3D /* AviaWiki */ = {
+		67E33ADC218095C500DAEAF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				674207EA213FD4DA006A4E3D /* AviaViewController.swift */,
-				674DD16C214143960066CC5D /* ModelsViewController.swift */,
-				674207EC213FD86F006A4E3D /* AviaTransportTableViewCell.swift */,
-				67335572214248C500399598 /* ModelsTableViewCell.swift */,
 				674DD16A214134DE0066CC5D /* VehicleGenerator.swift */,
 				674DD168214121880066CC5D /* Vehicle.swift */,
-				674207D8213FD37C006A4E3D /* AppDelegate.swift */,
+				67FEFFD4216666BD00425435 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67E33ADD218095D400DAEAF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				674207EC213FD86F006A4E3D /* AviaTransportTableViewCell.swift */,
+				67335572214248C500399598 /* ModelsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67E33ADE218095DE00DAEAF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				674207DC213FD37C006A4E3D /* Main.storyboard */,
+				674207EA213FD4DA006A4E3D /* AviaViewController.swift */,
+				674DD16C214143960066CC5D /* ModelsViewController.swift */,
+				67164F7E217E236C00B3F291 /* DescriptionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		67E33AE02180978900DAEAF4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				674207DF213FD37C006A4E3D /* Assets.xcassets */,
+				674207D8213FD37C006A4E3D /* AppDelegate.swift */,
 				674207E1213FD37C006A4E3D /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		67E33AE1218097FB00DAEAF4 /* AviaWiki */ = {
+			isa = PBXGroup;
+			children = (
 				674207E4213FD37C006A4E3D /* Info.plist */,
 			);
 			path = AviaWiki;
@@ -106,11 +144,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Андрей Сергиенко";
 				TargetAttributes = {
 					674207D4213FD37C006A4E3D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -157,7 +196,9 @@
 				674207EB213FD4DA006A4E3D /* AviaViewController.swift in Sources */,
 				67335573214248C500399598 /* ModelsTableViewCell.swift in Sources */,
 				674207ED213FD86F006A4E3D /* AviaTransportTableViewCell.swift in Sources */,
+				67164F7F217E236C00B3F291 /* DescriptionViewController.swift in Sources */,
 				674DD16B214134DE0066CC5D /* VehicleGenerator.swift in Sources */,
+				67FEFFD5216666BD00425435 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +238,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -204,6 +246,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -254,6 +297,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -261,6 +305,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -299,7 +344,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreysergienko.AviaWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,7 +358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreysergienko.AviaWiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
