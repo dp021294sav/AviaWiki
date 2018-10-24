@@ -23,7 +23,7 @@ class AviaViewController: UIViewController {
         tableView.reloadData()
     }
     
-    //MARK: - Prepare for segue
+    // MARK: - Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "showModels" else {return}
         guard let destVC = segue.destination as? ModelsViewController else {return}
@@ -34,7 +34,7 @@ class AviaViewController: UIViewController {
         destVC.vehicle = oneVehicle
     }
 }
-    //MARK: - UITableViewDelegate, UITableViewDataSource
+    // MARK: - UITableViewDelegate, UITableViewDataSource
 extension AviaViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,7 +51,7 @@ extension AviaViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.bounds.height * 0.3
+        return view.bounds.height * 0.33
     }
 
 }

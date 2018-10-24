@@ -22,7 +22,7 @@ class ModelsViewController: UIViewController {
         tableView.reloadData()
     }
     
-    //MARK: - Prepare for segue
+    // MARK: Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "showDescription" else {return}
         guard let destVC = segue.destination as? DescriptionViewController else {return}
@@ -32,7 +32,7 @@ class ModelsViewController: UIViewController {
     }
     
 }
-    //MARK: - UITableViewDataSource, UITableViewDelegate
+// MARK: - UITableViewDataSource, UITableViewDelegate
 extension ModelsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return vehicle?.models.count ?? 0

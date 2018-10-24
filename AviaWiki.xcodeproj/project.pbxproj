@@ -19,9 +19,12 @@
 		674DD16B214134DE0066CC5D /* VehicleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674DD16A214134DE0066CC5D /* VehicleGenerator.swift */; };
 		674DD16D214143960066CC5D /* ModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674DD16C214143960066CC5D /* ModelsViewController.swift */; };
 		67FEFFD5216666BD00425435 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEFFD4216666BD00425435 /* Model.swift */; };
+		6D4DFA17841B17CBA56F839C /* Pods_AviaWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83B2AD9FE2F1BF9ACA96D2F /* Pods_AviaWiki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13A3CB13F0990177295A7FD5 /* Pods-AviaWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviaWiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviaWiki/Pods-AviaWiki.debug.xcconfig"; sourceTree = "<group>"; };
+		235D331B03B35604D4138CDA /* Pods-AviaWiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviaWiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviaWiki/Pods-AviaWiki.release.xcconfig"; sourceTree = "<group>"; };
 		67164F7E217E236C00B3F291 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		67335572214248C500399598 /* ModelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewCell.swift; sourceTree = "<group>"; };
 		674207D5213FD37C006A4E3D /* AviaWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +39,7 @@
 		674DD16A214134DE0066CC5D /* VehicleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGenerator.swift; sourceTree = "<group>"; };
 		674DD16C214143960066CC5D /* ModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewController.swift; sourceTree = "<group>"; };
 		67FEFFD4216666BD00425435 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A83B2AD9FE2F1BF9ACA96D2F /* Pods_AviaWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviaWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4DFA17841B17CBA56F839C /* Pods_AviaWiki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 				67E33AE1218097FB00DAEAF4 /* AviaWiki */,
 				67E33AE02180978900DAEAF4 /* Supporting files */,
 				674207D6213FD37C006A4E3D /* Products */,
+				C0ED7E30721326C585F38FA7 /* Pods */,
+				82665020E102E1CDB574EE9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,23 @@
 			path = AviaWiki;
 			sourceTree = "<group>";
 		};
+		82665020E102E1CDB574EE9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83B2AD9FE2F1BF9ACA96D2F /* Pods_AviaWiki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0ED7E30721326C585F38FA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A3CB13F0990177295A7FD5 /* Pods-AviaWiki.debug.xcconfig */,
+				235D331B03B35604D4138CDA /* Pods-AviaWiki.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 674207E7213FD37C006A4E3D /* Build configuration list for PBXNativeTarget "AviaWiki" */;
 			buildPhases = (
+				2F0E76D40AAD00D5757F73F5 /* [CP] Check Pods Manifest.lock */,
 				674207D1213FD37C006A4E3D /* Sources */,
 				674207D2213FD37C006A4E3D /* Frameworks */,
 				674207D3213FD37C006A4E3D /* Resources */,
+				67E33AE22180AA4C00DAEAF4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -184,6 +210,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F0E76D40AAD00D5757F73F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AviaWiki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E33AE22180AA4C00DAEAF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		674207D1213FD37C006A4E3D /* Sources */ = {
@@ -337,6 +405,7 @@
 		};
 		674207E8213FD37C006A4E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A3CB13F0990177295A7FD5 /* Pods-AviaWiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +420,7 @@
 		};
 		674207E9213FD37C006A4E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235D331B03B35604D4138CDA /* Pods-AviaWiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

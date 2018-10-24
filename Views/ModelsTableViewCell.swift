@@ -10,7 +10,7 @@ import UIKit
 
 class ModelsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var modelsNameLabel: UILabel!
+    @IBOutlet private weak var modelsNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
